@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val dbPath = """D:\Android_HR\TEST\app\src\main\java\com\example\test\language_infinite_app2.db"""
+        val dbPath = """D:\AndroidStudioProjects\language_infinite_app2.db"""
         db = AppDatabase.getDatabase(this, dbPath)
 
         CoroutineScope(Dispatchers.IO).launch {
